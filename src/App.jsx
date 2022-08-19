@@ -1,45 +1,37 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+
+
+
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'; // React Router, for Page Navigation and Loading
+import './App.css';
+
+// import components
+import NavBar from "./components/navbar/navbar";
+import Landing from './components/landing';
+import DisplayResult from './components/result';
+import SearchForm from './components/searchform';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  console.log("routing in app");
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+    
+    <Router>
+    <div className="mw-100 vh-100">
+      <NavBar />
+      <div className="h-75">
+        <Routes>
+          <Route exact path="/" element = {<Landing/>}/>
+          <Route path = "/search" element = {<SearchForm fromLanding={1} />}/>
+          <Route path = "/results" element = {<DisplayResult/>}/>
+          {/* add error component here */}
+        </Routes>
+        
+      </div>
     </div>
-  )
-}
+  </Router>
+    
+  )};
 
 export default App

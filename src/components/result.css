@@ -1,0 +1,78 @@
+
+
+.aboutSearch {
+    border:1px solid rgb(123, 118, 118);
+    background-color: rgb(247, 241, 230);
+    color: rgb(34, 103, 122);
+    font-weight: 600;
+
+    display: flex;
+    width:75%;
+    height: 100px;
+    padding: 1%;
+   margin:auto;
+   margin-top: 5%;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.aboutTxt {
+    margin:auto;
+    color: rgb(72, 50, 22);
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+
+.active, .keyWordsContainer:hover {
+    background-color: rgb(223, 218, 208);
+  }
+
+.keyWordsContainer {
+    border:1px solid rgb(123, 118, 118);
+    background-color: rgb(247, 241, 230);
+
+   /* color: rgb(34, 103, 122);*/
+    color: rgb(72, 50, 22);
+    font-weight: 600;
+
+    width:75%;
+   margin:auto;
+   margin-top: 2%;
+   border-radius: 10px;
+   text-align: center;
+}
+.collapseExpand{
+
+  display: inline;
+  /* better if we could use flex, but for not it messes with the collapsible */
+ float: right;
+  padding-right: 5px;
+  /*font-size:20px;*/
+}
+
+.keyWordsContent {
+    background-color: white;
+    overflow: hidden;
+  
+  }
+
+
+  .style{
+    margin-top: 15px;
+    background-color: rgb(255, 253, 250);
+    color: rgb(72, 50, 22);
+    width: 100% 
+
+  }
+
+  .header{
+    height: 4vh;
+  }
+
+
+

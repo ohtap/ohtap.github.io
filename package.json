@@ -1,24 +1,23 @@
 {
-  "name": "ohtap.github.io",
+  "name": "winnow-2",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ohtap.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build"
+    "preview": "vite preview"
   },
   "dependencies": {
+    "neat-csv": "^7.0.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-collapsed": "^3.3.2",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
-    "gh-pages": "^4.0.0",
     "vite": "^2.9.9"
   }
 }
